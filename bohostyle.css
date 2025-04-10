@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+  body,html {
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    min-height:100vh;
+  }
+  h5{
+    color:white;
+    font-size:60px;
+    position: absolute;
+    width:100%;
+    max-width: 800px;
+    left:50%;
+    padding-left: 5%;
+    transform: translateY(-40px) translateX(-50%);
+  }
+  p {
+    font-family: "Merriweather", serif !important;
+    font-optical-sizing: auto;
+    font-weight: 420 !important;
+    font-style: normal;
+
+    text-align: left;
+
+
+  }
+  .text-cont{
+    max-width: 600px;
+    align-self: center;
+    padding-bottom: 10rem;
+    font-family: "Merriweather", serif !important;
+  }
+
+  * {
+    ooutline:.5px dashed blue;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6rem;
+    font-family: "Source Sans 3", sans-serif;
+  }
+  .spacer{
+    padding-left: .3rem;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #003D8E !important;
+  }
+
+  footer a {
+    color: white !important;
+  }
+
+  footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    background: black;
+    color: white;
+    width: 100vw;
+    max-width: 800px;
+    margin:auto;
+    display: flex;
+    pposition: fixed;
+    lleft:50%;
+    ttransform: translateX(-50%);
+    bottom: -1px;
+    flex-direction: row;
+    gap: 2rem;
+    jjustify-content: space-between;
+  }
+
+  header {
+    margin-top: -30px;
+    z-index: 2;
+    text-align: center;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin:auto;
+    background:#F8E6D3;
+  }
+
+  .hidden {
+    transform: translateY(-5%);
+    opacity: 0 !important;
+  }
+
+  .hero-image {
+    max-width: 1200px;
+    width: 100vw;
+    transform: scaleX(-1);
+    transition: 1s;
+    opacity: 1;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+
+
+  .main-text {
+    width: 100vw;
+    padding: 2rem;
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Source Serif 4", serif;
+    font-weight: 405;
+    flex-grow: 1;
+    justify-content: flex-start;
+    background:#F8E6D3;
+  }
+
+  main {
+    margin: auto;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .pendel {
+    margin-top: -20px;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+
+  .menubar {
+    width: 60%;
+    max-width: 800px;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom:10px;
+  }
+  .menubar a{
+    padding-left: 10px;
+    padding-right:10px;
+  }
+
+  body {
+    background:#D7EBFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: flex-start;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: left !important;
+  }
+
+  h2, h1, h3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  h6{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom:0!important;
+    padding-bottom:0!important;
+    font-family: Merriweather, serif;
+  }
+  h2{
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+
+  }
+  .liner{
+    border-top:1.5px solid black;
+  }
+  #image-container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto; /* Container nimmt die volle Breite ein */
+  height: auto;        /* Feste Höhe des Containers (nach Bedarf anpassen) */
+  overflow: visible;     /* Alles, was aus dem Container herausragt, wird abgeschnitten */
+  position: relative;
+}
+
+#image-container img {
+  width: 100%;         /* Bild füllt die volle Breite des Viewports */
+  height: auto;       /* Bild füllt die Höhe des Containers */
+  object-fit: cover;    /* Schneidet das Bild rechts und links ab, ohne es zu verzerren */
+  position: relative;   /* Positionieren des Bildes im Container */
+  left: 50%;            /* Bild zentrieren */
+  transform: translateX(-50%) scaleX(-1);
+}
+
+  /* Media Queries for Mobile Responsiveness */
+  @media (max-width: 400px) {
+    header{
+      font-size: 0.8rem!important;
+    }
+    h5{
+      padding-left: 5%;
+      font-size:30px;
+    }
+
+  }
+  @media (max-width: 768px) {
+    body{
+      background:#F8E6D3;
+    }
+    .pendel {
+      margin-top: -20px;
+      max-width: 80%;
+      margin-bottom: 20px;
+    }
+    header{
+      margin-top:30px;
+    }
+    .hero-image {
+      justify-content: center;
+      align-items: center;
+      margin-bottom:10px;
+    }
+
+
+    h2{
+      font-size: 1.2rem!important;
+    }
+    .main-text {
+    }
+    h5{
+      font-size: 2rem!important;
+    }
+    .menubar {
+      width: 100%;
+      margin:auto;
+      flex-direction: row;
+    }
+
+    header {
+      margin-bottom: 10px;
+    }
+    * {
+      line-height: 1.5rem;
+      font-size: 0.8rem!important;
+    }
+    .list{
+      line-height: 2rem!important;
+    }
+    main{
+      height:200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #image-container {
+    width: 100%;       /* Container nimmt die volle Breite ein */
+    height: 200px;        /* Feste Höhe des Containers (nach Bedarf anpassen) */
+    overflow: hidden;     /* Alles, was aus dem Container herausragt, wird abgeschnitten */
+    position: relative;
+  }
+
+  #image-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%) scaleX(-1);
+  }
+
+    #image-container{
+      min-height:300px;
+    }
+
+    .main-text {
+    }
+
+    .menubar {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    footer {
+      gap: 1rem;
+      font-size:12px;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    h2, h1, h3 {
+    }
+  }
+@media (min-width: 1400px) {
+
+  header, footer, .main-text, main,#image-container, h5{
+    max-width: 1200px!important;
+  }
+}
